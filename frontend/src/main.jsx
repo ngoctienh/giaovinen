@@ -5,8 +5,7 @@ import axios from 'axios'
 
 // 1. Cấu hình URL gốc cho tất cả API
 // ⚠️ QUAN TRỌNG: Xóa link cũ và dán đường link Render thật của bạn vào đây (Nhớ giữ lại /api ở cuối)
-axios.defaults.baseURL = 'https://https://giaovien-backend.onrender.com/api';
-// axios.defaults.baseURL = 'https://giaovien-backend.onrender.com/api';
+axios.defaults.baseURL = 'https://giaovien-backend.onrender.com/api';
 
 // 2. Tự động đính kèm Token vào Header của mọi request
 axios.interceptors.request.use((config) => {
