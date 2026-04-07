@@ -4,7 +4,8 @@ import App from './App.jsx'
 import axios from 'axios'
 
 // 1. Cấu hình URL gốc cho tất cả API
-axios.defaults.baseURL = 'http://localhost:5000/api';
+// Thay thế bằng URL mà Render vừa cấp cho bạn (Giữ nguyên đuôi /api)
+axios.defaults.baseURL = 'https://giaovien-backend-xxx.onrender.com/api';
 
 // 2. Tự động đính kèm Token vào Header của mọi request
 axios.interceptors.request.use((config) => {
