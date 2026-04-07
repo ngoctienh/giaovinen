@@ -22,7 +22,7 @@ const updateProfile = (req, res) => {
     const teacherId = req.params.id;
     const { fullname, email } = req.body;
 
-    const sql = "UPDATE giaovien SET fullname = ?, email = ? WHERE id = ?";
+    const sql = "UPDATE giaovien SET fullname = $1, email = $2 WHERE id = $3";
     db.query(sql, [fullname, email, teacherId], (err, result) => {
         if (err) return res.status(500).json({ message: "Lỗi server khi cập nhật." });
         res.json({ success: true, message: 'Đã lưu thay đổi hồ sơ!' });
@@ -35,7 +35,7 @@ const changePassword = (req, res) => {
     const teacherId = req.params.id;
 
     // Truy vấn lấy dữ liệu giáo viên hiện tại để kiểm tra
-    const sql = 'SELECT * FROM giaovien WHERE id = ?';
+    const sql = 'SELECT * FROM giaovien WHERE id = $1';
     db.query(sql, [teacherId], async(err, results) => {
         if (err || results.length === 0) return res.status(404).json({ message: 'Không tìm thấy giáo viên.' });
 
@@ -52,7 +52,7 @@ const changePassword = (req, res) => {
         const hashedNewPassword = await bcrypt.hash(newPassword, salt);
 
         // Lưu mật khẩu mới đã mã hóa vào CSDL
-        const updateSql = 'UPDATE giaovien SET password_hash = ? WHERE id = ?';
+        const updateSql = 'UPDATE giaovien SET password_hash = $1 WHERE id = $2';
         db.query(updateSql, [hashedNewPassword, teacherId], (err, result) => {
             if (err) return res.status(500).json({ message: 'Lỗi server khi đổi mật khẩu.' });
             res.json({ success: true, message: 'Đổi mật khẩu thành công!' });
