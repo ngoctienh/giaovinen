@@ -1,0 +1,137 @@
+.question-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+}
+
+.question-modal-content {
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    height: 80vh;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.question-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.question-modal-title {
+    margin: 0;
+    font-size: 18px;
+    color: #1e293b;
+}
+
+.question-modal-badge {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.question-filter-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.question-filter-select {
+    width: 200px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    font-family: inherit;
+}
+
+.question-list-container {
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.question-empty-msg {
+    text-align: center;
+    color: #64748b;
+    padding: 20px;
+}
+
+.question-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s;
+    align-items: flex-start;
+}
+
+.question-item.selected {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.question-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #4f46e5;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.question-text-content {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+.question-id-highlight {
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+.question-meta-info {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.question-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.btn-question-done {
+    padding: 10px 20px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}

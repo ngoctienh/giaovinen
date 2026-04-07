@@ -1,0 +1,244 @@
+.result-detail-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.result-detail-back-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.result-detail-title {
+    font-size: 24px;
+    color: var(--text-main);
+    margin-bottom: 5px;
+}
+
+.result-detail-subtitle {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.result-detail-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.result-detail-btn-print {
+    background-color: white;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.result-detail-btn-export {
+    background-color: var(--success);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.result-detail-stats-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.result-detail-stat-box {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 200px;
+}
+
+.result-detail-stat-icon {
+    font-size: 24px;
+}
+
+.result-detail-stat-icon.info {
+    color: var(--info);
+}
+
+.result-detail-stat-icon.primary {
+    color: var(--primary);
+}
+
+.result-detail-stat-icon.success {
+    color: var(--success);
+}
+
+.result-detail-stat-label {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.result-detail-stat-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.result-detail-table-container {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.result-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-detail-th {
+    background-color: #f8fafc;
+    padding: 15px 20px;
+    font-size: 13px;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.result-detail-th.left {
+    text-align: left;
+}
+
+.result-detail-th.center {
+    text-align: center;
+}
+
+.result-detail-loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.result-detail-tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.result-detail-tr.absent {
+    background-color: #fafafa;
+}
+
+.result-detail-tr.present {
+    background-color: white;
+}
+
+.result-detail-td {
+    padding: 15px 20px;
+}
+
+.result-detail-td.masv {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.result-detail-td.fullname {
+    font-weight: 500;
+}
+
+.result-detail-td.center {
+    text-align: center;
+}
+
+.result-detail-absent-text {
+    color: var(--danger);
+    font-size: 13px;
+}
+
+.result-detail-muted-dash {
+    color: var(--text-muted);
+}
+
+.result-detail-badge-absent {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #e2e8f0;
+    color: #475569;
+}
+
+.result-detail-btn-disabled {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background: #f1f5f9;
+    color: #cbd5e1;
+    cursor: not-allowed;
+}
+
+.result-detail-time {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.result-detail-correct {
+    color: var(--success);
+    font-weight: 600;
+}
+
+.result-detail-total {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.result-detail-score {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.result-detail-score.passed {
+    color: var(--primary);
+}
+
+.result-detail-score.failed {
+    color: var(--danger);
+}
+
+.result-detail-badge-passed {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--success-bg);
+    color: var(--success);
+}
+
+.result-detail-badge-failed {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--danger-bg);
+    color: var(--danger);
+}
+
+.result-detail-btn-view {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid var(--primary);
+    background: white;
+    color: var(--primary);
+    cursor: pointer;
+    text-decoration: none;
+}

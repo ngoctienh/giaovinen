@@ -1,0 +1,115 @@
+.view-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+}
+
+.view-modal-content {
+    background-color: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.view-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.view-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #1e293b;
+}
+
+.btn-close-modal {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.view-modal-info {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.view-modal-info-item {
+    flex: 1;
+    min-width: 45%;
+}
+
+.view-modal-info-item p {
+    margin: 5px 0;
+    color: #334155;
+}
+
+.view-modal-body {
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.view-question-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+.view-question-title {
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.view-question-content {
+    color: #334155;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.view-answers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.view-answer-item {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-view-close {
+    padding: 10px 25px;
+    background-color: #f1f5f9;
+    color: #475569;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}

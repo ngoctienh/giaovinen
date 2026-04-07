@@ -1,0 +1,108 @@
+.layout-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: var(--sidebar-bg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.teacher-profile {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.teacher-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 10px;
+    color: #818cf8;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 15px 10px;
+    flex-grow: 1;
+}
+
+.nav-menu a {
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav-menu a i {
+    width: 24px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: rgba(79, 70, 229, 0.2);
+    color: #818cf8;
+}
+
+.btn-logout {
+    padding: 12px;
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-logout:hover {
+    background: #fee2e2;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.top-header {
+    height: 70px;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.dashboard-body {
+    padding: 30px;
+    overflow-y: auto;
+    flex-grow: 1;
+}

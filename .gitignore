@@ -1,0 +1,5 @@
+# Bỏ qua các thư mục chứa thư viện nặng và file bảo mật
+node_modules/
+.env
+dist/
+build/
